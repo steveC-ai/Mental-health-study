@@ -1,6 +1,6 @@
 #Analysis on mental health and climate
 library(readxl)
-mhd2 <- read_excel("CHEV/Mental health/Mental health data 2.xlsx")
+mhd2 <- read_excel("Mental health data 2.xlsx")
 View(mhd2)
 
 
@@ -8,7 +8,7 @@ library(plm)
 library(stargazer)
 library(gtsummary)
 
-#This is a preliminary analysis between mental health and climate
+#This is a preliminary analysis between mental health and climate using panel regression 
 
 
 #Fixed effects models
@@ -134,24 +134,19 @@ reg36 = plm(suicrf ~ temp + unem*gdp, index = c("country", "year"),
 stargazer(reg34, reg35, reg36, type = "text")
 
 
-##Temperature and suicide are strongly related but it is negative
-##so when temperature goes up suicide rates go down. On the other hand
-##gdp is also related to suicide in a  negative way so when
-##gdp goes up suicide goes down
-##Unemployment may not be a good indicator due to the way it is estimated
-##lot's of unemployed people are counted as "inactive" or viceversa
-##some countries have extremely low (near zero) unemployment which in principle 
-##shouldn't be possible
+## Temperature and suicide have a strong negative relation 
+## meaning that an increase in temperatures leads to a decreasse in suicide rates
 
-##Economic variables have a stronger effect on men's suicide than
-##women's suicide and it's R2 is twice as high
+## GDP also has a negative relation with suicide
 
+## Unemployment may not be an effective indicator due to how it is estimated
+## in different countries, sometimes prople are considered unemployed while in other countries
+## they may be counted as economically inactive 
+## Some countries have near 0 unemployment which in principle shouldn't be possible
+## as in normal economic conditions there is a certain level of frictional unemployment
 
-
-
-
-
-
+## Economic variables have a stronger effect on men's suicide than
+## women's suicide and it's R2 is twice as high
 
 
 
