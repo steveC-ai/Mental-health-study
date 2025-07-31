@@ -23,12 +23,12 @@ Using panel regression models in R, this study evaluates the impact of these var
   - Female suicide rate
 
 - Economic variables:
-  - GDP per capita
-  - Inflation
-  - Unemployment
+  - GDP per capita (constant USD)
+  - Inflation (% annual change)
+  - Unemployment(% of labour force)
 
 - Health variables:
-  - Alcohol consumption per capita
+  - Alcohol consumption per capita (liters per year)
 
 - Climate varaibles:
   - Average temperature (celsius)
