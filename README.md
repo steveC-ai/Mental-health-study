@@ -1,4 +1,39 @@
 # Mental-health-study
-In this project I study how climate and socieconomic variables affect suicide rates
-The following project is an analysis on what variables affect suicide rates the most, using average temperature as a climate variable, and GDP per capita, unemployment and inflation as economic variables. Suicide rates are based on suicide per 100.000 habitants at a national level. There a three suicide rates: general suicide rate, male suicide rate and female suicide rate.
-To study the relationship between these variables I use panel regression models on R.
+## Overview
+This project investigates how climate and economic factors affect national suicide rates. The focus is on identifying which variables — such as average temperature, GDP per capita, unemployment, and inflation — are most strongly associated with suicide rates.
+
+Using panel regression models in R, this study evaluates the impact of these variables across countries over time. Suicide rates are measured per 100,000 inhabitants and are broken down as follows:
+
+- Overall population
+- Male population
+- Female population
+
+## Methods
+- Statistical approach: fixed effects panel regression models
+- Software: R
+- Data sources: WHO, World Bank, World Bank Climate Knowledge Portal
+- Timeframe: 2000 - 2019
+- Units of analysis : National level data
+
+## Variables used
+
+- Suicide rates:
+  - Overall suicide rate
+  - Male suicide rate
+  - Female suicide rate
+
+- Economic variables:
+  - GDP per capita
+  - Inflation
+  - Unemployment
+
+- Health variables:
+  - Alcohol consumption per capita
+
+- Climate varaibles:
+  - Average temperature (celsius)
+
+- Panel dimensions:
+  - Country
+  - Year
+ 
